@@ -16,7 +16,7 @@
   "website":"http://www.kahahai.in",
   "success_url":"/",
   "env": {
-    "SECRET_TOKEN": {
+    "SECRET_KEY_BASE": {
       "description": "A secret key for verifying the integrity of signed cookies.",
       "generator": "secret"
     },
