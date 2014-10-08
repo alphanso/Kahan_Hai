@@ -3,8 +3,8 @@
 
 
 /* TEAM */
-  <your title>: <your name>
-  Site:
+  Founder: Rishabh Singhal
+  Site: kahahai.in
   Twitter:
   Location:
 

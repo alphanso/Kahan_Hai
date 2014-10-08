@@ -20,16 +20,17 @@ gem 'simple_form'
 gem 'slim-rails'
 gem 'unicorn'
 gem 'unicorn-rails'
-gem 'upmin-admin'
 gem 'mongoid'
 gem 'bcrypt'
 gem 'simple_enum'
+gem 'simplecov'
 group :development do
   gem 'better_errors'
   gem 'binding_of_caller', :platforms=>[:mri_21]
   gem 'guard-bundler'
   gem 'guard-rails'
   gem 'guard-rspec'
+  gem 'guard-rubocop'
   gem 'hub', :require=>nil
   gem 'quiet_assets'
   gem 'rails_layout'
