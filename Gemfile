@@ -23,7 +23,6 @@ gem 'unicorn-rails'
 gem 'mongoid'
 gem 'bcrypt'
 gem 'simple_enum'
-gem 'simplecov'
 group :development do
   gem 'better_errors'
   gem 'binding_of_caller', :platforms=>[:mri_21]
@@ -55,4 +54,5 @@ group :test do
   gem 'database_cleaner'
   gem 'launchy'
   gem 'selenium-webdriver'
+  gem "codeclimate-test-reporter", require: nil
 end

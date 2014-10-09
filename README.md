@@ -2,7 +2,9 @@ Kahan Hai
 ================
 
 [![Deploy to Heroku](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
-
+[![Code Climate](https://codeclimate.com/github/alphanso/Kahan_Hai/badges/gpa.svg)](https://codeclimate.com/github/alphanso/Kahan_Hai)
+[![Test Coverage](https://codeclimate.com/github/alphanso/Kahan_Hai/badges/coverage.svg)](https://codeclimate.com/github/alphanso/Kahan_Hai)
+[![Build Status](https://magnum.travis-ci.com/alphanso/Kahan_Hai.svg?token=5KHr5krqkVMeEohxn8Ei&branch=master)](https://magnum.travis-ci.com/alphanso/Kahan_Hai)
 This application was generated with the [rails_apps_composer](https://github.com/RailsApps/rails_apps_composer) gem
 provided by the [RailsApps Project](http://railsapps.github.io/).
 
