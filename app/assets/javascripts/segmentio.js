@@ -28,17 +28,17 @@ for (var i = 0; i < window.analytics.methods.length; i++) {
 // Define a method to load Analytics.js from our CDN,
 // and that will be sure to only ever load it once.
 window.analytics.load = function(key){
-  if (document.getElementById('analytics-js')) return;
+  if (document.getElementById('analytics-js')) {
+      return
+  };
 
   // Create an async script element based on your key.
   var script = document.createElement('script');
   script.type = 'text/javascript';
   script.id = 'analytics-js';
   script.async = true;
-  script.src = ('https:' === document.location.protocol
-    ? 'https://' : 'http://')
-    + 'cdn.segment.io/analytics.js/v1/'
-    + key + '/analytics.min.js';
+  script.src = ('https:' === document.location.protocol ? 'https://' : 'http://') + 'cdn.segment.io/analytics.js/v1/'+
+      key + '/analytics.min.js';
 
   // Insert our script next to the first script element.
   var first = document.getElementsByTagName('script')[0];
@@ -55,4 +55,4 @@ window.analytics.load('GqdLK93ZuX');
 // accommodate Turbolinks and make the first page call to load the integrations.
 $(document).on('ready page:change', function() {
   window.analytics.page();
-})
+});

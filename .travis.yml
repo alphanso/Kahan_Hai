@@ -1,7 +1,7 @@
 language: ruby
 rvm:
   - 2.1.2
-script: "bundle exec rake spec:model"
+script: "bundle exec rake spec:models"
 notifications:
   email:
     recipients:
