@@ -1,0 +1,30 @@
+p#notice = notice
+
+p
+  strong Name:
+  = @chain_of_store.name
+p
+  strong Type:
+  = @chain_of_store.type
+p
+  strong Slug:
+  = @chain_of_store.slug
+p
+  strong Phonenumbers:
+  = @chain_of_store.phoneNumbers
+p
+  strong Emailaddress:
+  = @chain_of_store.emailAddress
+p
+  strong Website:
+  = @chain_of_store.website
+p
+  strong Owner:
+  = @chain_of_store.owner
+p
+  strong Facilities:
+  = @chain_of_store.facilities
+
+= link_to 'Edit', edit_chain_of_store_path(@chain_of_store)
+'|
+= link_to 'Back', chain_of_stores_path

@@ -1,0 +1,10 @@
+= simple_form_for(@store) do |f|
+  = f.error_notification
+
+  .form-inputs
+    = f.input :facilities
+    = f.input :phoneNumbers
+    = f.input :Address
+
+  .form-actions
+    = f.button :submit

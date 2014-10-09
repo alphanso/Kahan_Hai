@@ -1,0 +1,15 @@
+p#notice = notice
+
+p
+  strong Facilities:
+  = @store.facilities
+p
+  strong Phonenumbers:
+  = @store.phoneNumbers
+p
+  strong Address:
+  = @store.Address
+
+= link_to 'Edit', edit_store_path(@store)
+'|
+= link_to 'Back', stores_path
