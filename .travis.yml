@@ -1,0 +1,21 @@
+language: ruby
+rvm:
+  - 1.8.7
+  - 1.9.2
+  - 1.9.3
+  - 2.0.0
+  - 2.1.0
+  - rbx-2
+  - jruby-18mode
+  - jruby-19mode
+  - ree
+script: "bundle exec rake spec:model"
+before_install:
+  - sudo apt-get update
+  - sudo apt-get install idn
+notifications:
+  email:
+    recipients:
+      - admin@kahahai.in
+    on_success: change
+    on_failure: change
