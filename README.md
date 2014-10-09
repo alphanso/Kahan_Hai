@@ -48,3 +48,4 @@ Credits
 
 License
 -------
+Please don't use this code. This code is not supposed to be used by anyone. You need explicit permission from rishabh_singhal@outlook.com for forking, branching or any other thing. 
