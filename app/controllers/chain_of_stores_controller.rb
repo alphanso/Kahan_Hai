@@ -21,6 +21,7 @@ class ChainOfStoresController < ApplicationController
 
   def create
     @chain_of_store = ChainOfStore.new(chain_of_store_params)
+    @chain_of_store.user = current_user
     @chain_of_store.save
     respond_with(@chain_of_store)
   end
@@ -41,6 +42,6 @@ class ChainOfStoresController < ApplicationController
     end
 
     def chain_of_store_params
-      params.require(:chain_of_store).permit(:name, :type, :slug, :phoneNumbers, :emailAddress, :website, :owner, :facilities)
+      params.require(:chain_of_store).permit(:name, :type, :slug, :phoneNumbers, :emailAddress, :website, :facilities)
     end
 end

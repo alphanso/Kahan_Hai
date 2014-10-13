@@ -14,7 +14,7 @@ class User
   ## Database authenticatable
   field :email,              type: String, default: ""
   field :encrypted_password, type: String, default: ""
-  field :_id, type: String, default: -> { email }
+  field :_id, type: String, default: -> { email } #TODO: change this so that user can change email address
 
   ## Recoverable
   field :reset_password_token,   type: String
@@ -57,5 +57,5 @@ class User
   ## Other member variable
   field :name,  type: String
   #field :photo, type: String
-
+  has_one :chain_of_store
 end

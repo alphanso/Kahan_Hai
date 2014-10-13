@@ -6,7 +6,7 @@ class ChainOfStore
   field :phoneNumbers, type: Array
   field :emailAddress, type: String
   field :website, type: String
-  field :owner, type: User
-  field :facilities, type: Hash
+
+  belongs_to :user
   has_many :stores
 end

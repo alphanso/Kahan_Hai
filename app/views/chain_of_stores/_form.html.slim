@@ -3,11 +3,11 @@
 
   .form-inputs
     = f.input :name
-    = f.input :type
+    = f.input :type, collection: ["Eatery", "Medical Facility", "Supermarket"]
     = f.input :slug
+    = f.input :phoneNumbers, :input_html => { :name => "chain_of_store[phoneNumbers][]" }
     = f.input :emailAddress
     = f.input :website
-    = f.input :owner
 
   .form-actions
     = f.button :submit
